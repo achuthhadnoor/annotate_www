@@ -6,7 +6,7 @@ import cn from "classnames";
 import Header from "./header";
 
 const CrispWithNoSSR = dynamic(() => import("./crisp"), { ssr: false });
-const Link = ({ href, name, ...props }) => {
+const Link = ({ href, name, ...props }: any) => {
   const router = useRouter();
   const isActive =
     href === "/" ? router.asPath === href : router.asPath.includes(href);
@@ -36,7 +36,7 @@ const Navigation = () => {
     { id: "home", name: "Home", link: "/" },
     { id: "download", name: "Download", link: "/download" },
     { id: "pricing", name: "Pricing", link: "/pricing" },
-    { id: "roadmap", name: "Roadmap", link: "/roadmap" },
+    { id: "newsletter", name: "Newsletter", link: "/newsletter" },
     { id: "support", name: "Support", link: "mailto:hey@achuth.dev" },
   ];
   return (

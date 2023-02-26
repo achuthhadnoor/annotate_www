@@ -1,16 +1,16 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import { useState, useEffect } from "react";
 import Layout from "../components/layout";
+import Timer from "../components/timer";
 
 const Pricing: NextPage = () => {
   return (
-    <Layout meta={{ title: "Pricing | Annotate your screen" }}>
-      <div className="mt-5 flex flex-col items-center">
-        <h1 className="max-w-xl text-4xl font-bold text-center ">
+    <Layout title={"Pricing | Annotate your screen"}>
+      <div className="mt-2 flex flex-col items-center">
+        <h1 className="max-w-xl text-xl font-semibold text-center ">
           One price. All of the features. Bye bye video editing.
         </h1>
-        <div className="container mx-auto py-16 px-4 sm:px-0 space-y-10">
+        <Timer type="horizontal" />
+        <div className="container mx-auto py-10 px-4 sm:px-0 space-y-10">
           <div className="mt-8 flex justify-center space-x-3 mx-auto">
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
