@@ -5,9 +5,9 @@ export default function newsletter() {
   return (
     <Layout>
       <p className="mt-2 text-center max-w-xl mx-auto">
-        I'm building Lotus in the open with total transparency. Every Sunday I
-        send out an update on how things are going. Sign up below to look behind
-        the curtains.
+        I'm building annotate in the open with total transparency. Every Sunday
+        I send out an update on how things are going. Sign up below to look
+        behind the curtains.
       </p>
       <form
         action="https://buttondown.email/api/emails/embed-subscribe/building-lotus"

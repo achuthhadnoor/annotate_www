@@ -36,7 +36,7 @@ const Navigation = () => {
     { id: "home", name: "Home", link: "/" },
     { id: "download", name: "Download", link: "/download" },
     { id: "pricing", name: "Pricing", link: "/pricing" },
-    { id: "newsletter", name: "Newsletter", link: "/newsletter" },
+    // { id: "newsletter", name: "Newsletter", link: "/newsletter" },
     { id: "support", name: "Support", link: "mailto:hey@achuth.dev" },
   ];
   return (
