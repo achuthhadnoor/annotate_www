@@ -117,7 +117,7 @@ export default function timer({ type }: any) {
                     />
                   </svg>
                 </span>
-                <span>
+                {/* <span>
                   <svg
                     width="16"
                     height="16"
@@ -137,7 +137,7 @@ export default function timer({ type }: any) {
                       </clipPath>
                     </defs>
                   </svg>
-                </span>
+                </span> */}
               </div>
             </div>
           )}
