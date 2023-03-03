@@ -34,7 +34,7 @@ const Link = ({ href, name, ...props }: any) => {
 const Navigation = () => {
   const navItemms = [
     { id: "home", name: "Home", link: "/" },
-    { id: "download", name: "Download", link: "/download" },
+    // { id: "download", name: "Download", link: "/download" },
     { id: "pricing", name: "Pricing", link: "/pricing" },
     // { id: "newsletter", name: "Newsletter", link: "/newsletter" },
     { id: "support", name: "Support", link: "mailto:hey@achuth.dev" },
@@ -118,7 +118,7 @@ export default function Container(props: { [x: string]: any; children: any }) {
         />
         <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
-      <span className="fixed bottom-5 right-36 z-10">
+      {/* <span className="fixed bottom-5 right-36 z-10">
         <a
           href="https://www.producthunt.com/posts/lapse-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-lapse&#0045;2"
           target="_blank"
@@ -128,7 +128,7 @@ export default function Container(props: { [x: string]: any; children: any }) {
             alt="lapse - Save&#0032;instant&#0032;time&#0045;lapse&#0032;screen&#0032;recording&#0032;✨ | Product Hunt"
           />
         </a>
-      </span>
+      </span> */}
       <div className="bg-gradient-to-b from-blue-500 to-neutral-900 ">
         <Header />
         <div className="container mx-auto py-16 px-4 sm:px-0 space-y-10">
