@@ -1,107 +1,148 @@
-import React, { useEffect, useState } from "react";
+import Image from 'next/image'
+import React, { useEffect, useState } from 'react'
 
-export default function timer({ type }: any) {
-  const [timer, setTimer] = useState({ days: 0, hr: 0, min: 0, sec: 0 });
-  const [isLoading, setIsLoading] = useState(true);
+export default function Timer({ type }: { type: string }) {
+  const [timer, setTimer] = useState({ days: 0, hr: 0, min: 0, sec: 0 })
+  const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
-    const countDownDate = new Date("March 1, 2024 15:37:25").getTime();
+    const countDownDate = new Date('December 31, 2023 15:37:25').getTime()
     // Update the count down every 1 second
     var x = setInterval(function () {
       // Get today's date and time
-      var now = new Date().getTime();
+      var now = new Date().getTime()
 
       // Find the distance between now and the count down date
-      var distance = countDownDate - now;
+      var distance = countDownDate - now
 
       // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24))
       var hours = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      setTimer({ days: days, hr: hours, min: minutes, sec: seconds });
-      setIsLoading(false);
+      )
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+      setTimer({ days: days, hr: hours, min: minutes, sec: seconds })
+      setIsLoading(false)
       // If the count down is finished, write some text
       if (distance < 0) {
-        clearInterval(x);
+        clearInterval(x)
       }
-    }, 1000);
-  }, []);
-
-  switch (type) {
-    case "vertical":
-      return (
-        <div id="timer" className="mt-5">
-          {!isLoading && (
-            <div className="bg-skin-secondary inline-block justify-center rounded-xl p-2 align-middle">
-              <div className="flex">
-                <span className="mr-4 flex flex-col p-2">
-                  <span>{timer.days}</span>
-                  <span className="text-xs text-blue-500">Days</span>
-                </span>
-                <span className="mr-4 flex flex-col p-2">
-                  <span>{timer.hr}</span>
-                  <span className="text-xs text-blue-500">Hrs</span>
-                </span>
-                <span className="mr-4 flex flex-col p-2">
-                  <span>{timer.min}</span>
-                  <span className="text-xs text-blue-500">mins</span>
-                </span>
-                <span className="mr-4 flex flex-col p-2">
-                  <span>{timer.sec}</span>
-                  <span className="text-xs text-blue-500">Sec</span>
-                </span>
-              </div>
-              <a href="https://achuthhadnoor.gumroad.com/l/annotate">
-                <button className="mt-2 w-full rounded-lg bg-orange-500 px-4 py-2 text-xs ring-purple-900 hover:ring-2 sm:text-sm">
-                  Get It for{" "}
-                  <span className="stroke-orange-600 text-purple-300 line-through">
-                    $9
-                  </span>{" "}
-                  <span className="ring-1 ring-gray-900">$3</span>
-                </button>
-              </a>
-            </div>
-          )}
+    }, 1000)
+  }, [])
+  return type === 'vertical' ? (
+    <div id="timer" className="mt-5">
+      <div className="bg-skin-secondary inline-block justify-center rounded-xl p-2 align-middle">
+        <div className="flex">
+          <span className="mr-4 flex flex-col p-2">
+            <span>{timer.days}</span>
+            <span className="text-xs text-purple-500">Days</span>
+          </span>
+          <span className="mr-4 flex flex-col p-2">
+            <span>{timer.hr}</span>
+            <span className="text-xs text-purple-500">Hrs</span>
+          </span>
+          <span className="mr-4 flex flex-col p-2">
+            <span>{timer.min}</span>
+            <span className="text-xs text-purple-500">mins</span>
+          </span>
+          <span className="mr-4 flex flex-col p-2">
+            <span>{timer.sec}</span>
+            <span className="text-xs text-purple-500">Sec</span>
+          </span>
         </div>
-      );
-    case "horizontal":
-      return (
-        <div id="timer" className="mt-4">
-          {!isLoading && (
-            <div className="bg-skin-secondary inline-block justify-center rounded-xl align-middle">
-              <div className="bg-skin-secondary mt-5 inline-block justify-center rounded-xl px-2 align-middle ring ring-blue-500">
-                <div className="flex">
-                  <span className="md:mr1 mr-2 flex flex-col p-2">
-                    <span>{timer.days}</span>
-                    <span className="text-xs text-blue-300">Days</span>
-                  </span>
-                  <span className="md:mr1 mr-2 flex flex-col p-2">
-                    <span>{timer.hr}</span>
-                    <span className="text-xs text-blue-300">Hrs</span>
-                  </span>
-                  <span className="md:mr1 mr-2 flex flex-col p-2">
-                    <span>{timer.min}</span>
-                    <span className="text-xs text-blue-300">mins</span>
-                  </span>
-                  <span className="mr-4 flex flex-col p-2">
-                    <span>{timer.sec}</span>
-                    <span className="text-xs text-blue-300">Sec</span>
-                  </span>
-                  <a href="https://gum.co/annotate" target="_blank">
-                    <button className="m-2 rounded-lg bg-blue-800 px-4 py-2 text-xs outline-none ring-blue-900 hover:bg-blue-600 hover:ring-2 sm:text-sm">
-                      Get It for
-                      <span className="stroke-blue-300 px-1 font-bold text-blue-300 line-through">
-                        $25
-                      </span>
-                      <span className="text-blue-100">$9</span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div className="mt-5 flex items-center justify-center gap-4 p-2 align-middle">
-                <span className="text-blue-300">Avalilable on</span>
+        <a href="https://achuthhadnoor.gumroad.com/l/learnvim">
+          <button className="mt-2 w-full rounded-lg bg-purple-500 px-4 py-2 text-xs ring-purple-900 hover:ring-2 sm:text-sm">
+            Get It for{' '}
+            <span className="stroke-purple-600 text-purple-300 line-through">
+              $25
+            </span>{' '}
+            <span className="ring-1 ring-gray-900">$15</span>
+          </button>
+        </a>
+      </div>
+    </div>
+  ) : (
+    <div id="timer" className="mt-4">
+      <div className="bg-skin-secondary inline justify-center space-y-6 rounded-xl align-middle">
+        <div className="bg-skin-secondary mt-5 inline-block justify-center rounded-xl  align-middle ring ring-purple-500">
+          <div className="flex">
+            <span className="md:mr1 mr-2 flex flex-col p-2">
+              <span>{timer.days}</span>
+              <span className="text-xs text-purple-300">Days</span>
+            </span>
+            <span className="md:mr1 mr-2 flex flex-col p-2">
+              <span>{timer.hr}</span>
+              <span className="text-xs text-purple-300">Hrs</span>
+            </span>
+            <span className="md:mr1 mr-2 flex flex-col p-2">
+              <span>{timer.min}</span>
+              <span className="text-xs text-purple-300">mins</span>
+            </span>
+            <span className="mr-4 flex flex-col p-2">
+              <span>{timer.sec}</span>
+              <span className="text-xs text-purple-300">Sec</span>
+            </span>
+            <a href="https://gum.co/annotate" target="_blank">
+              <button className="m-2 rounded-lg bg-purple-800 px-4 py-2 text-xs outline-none ring-purple-900 hover:bg-purple-600 hover:ring-2 sm:text-sm">
+                Get It for
+                <span className="stroke-purple-300 px-1 font-bold text-purple-300 line-through">
+                  $25
+                </span>
+                <span className="text-purple-100">$15</span>
+              </button>
+            </a>
+          </div>
+        </div>
+        {/* <div className="my-4 flex flex-col items-center gap-2 text-sm sm:flex-row">
+          <span>Used by </span>
+          <span className="[&>*]:border-primary my-1 ml-1 flex -space-x-1  [&>*]:inline-block [&>*]:h-6 [&>*]:w-6 [&>*]:rounded-full [&>*]:border-2 [&>*]:sm:h-8 [&>*]:sm:w-8">
+            <Image
+              src="/avatars/catz.jpg"
+              alt="Catz"
+              height={25}
+              width={25}
+              className="rounded-full ring-1 ring-purple-400"
+            />
+            <Image
+              src="/avatars/epitomi.png"
+              alt="epitomi"
+              height={25}
+              width={25}
+              className="rounded-full ring-1 ring-purple-400"
+            />
+            <Image
+              src="/avatars/mikkel.jpg"
+              alt="mikkel"
+              height={25}
+              width={25}
+              className="rounded-full ring-1 ring-purple-400"
+            />
+            <Image
+              src="/avatars/afvallenzondergedoe.png"
+              alt="afvallenzondergedoe"
+              height={25}
+              width={25}
+              className="rounded-full ring-1 ring-purple-400"
+            />
+            <Image
+              src="/avatars/Aileenooi.jpeg"
+              alt="Aileenooi"
+              height={25}
+              width={25}
+              className="rounded-full ring-1 ring-purple-400"
+            />
+            <Image
+              src="/avatars/crystal.png"
+              alt="crystal"
+              height={25}
+              width={25}
+              className="rounded-full ring-1 ring-purple-400"
+            />
+          </span>
+          <span>+ 1000's of designers, educators, gamers and more!</span>
+        </div> */}
+        {/* <div className="mt-5 flex items-center justify-center gap-4 p-2 align-middle">
+                <span className="text-purple-300">Avalilable on</span>
                 <span>
                   <svg
                     width="22"
@@ -117,7 +158,7 @@ export default function timer({ type }: any) {
                     />
                   </svg>
                 </span>
-                {/* <span>
+                <span>
                   <svg
                     width="16"
                     height="16"
@@ -137,13 +178,9 @@ export default function timer({ type }: any) {
                       </clipPath>
                     </defs>
                   </svg>
-                </span> */}
-              </div>
-            </div>
-          )}
-        </div>
-      );
-    default:
-      return null;
-  }
+                </span>
+              </div> */}
+      </div>
+    </div>
+  )
 }

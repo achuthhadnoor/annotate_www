@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-neutral-900 text-neutral-200 font-mono;
+html {
+  @apply bg-black font-sans text-neutral-50;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-neutral-50 dark:bg-neutral-900;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply absolute rounded bg-neutral-400;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply rounded bg-purple-700;
+}
+::-webkit-search-cancel-button {
+  @apply bg-orange-400;
 }
