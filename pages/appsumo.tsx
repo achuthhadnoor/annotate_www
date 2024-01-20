@@ -28,21 +28,21 @@ const Appsumo = (props: any) => {
         console.log(res.data)
         if (os === 'macos') {
           window.open(
-            'https://github.com/achuthhadnoor/lapse_www/releases/download/1.0.2/Lapse-1.0.2-x64.dmg',
+            'https://github.com/achuthhadnoor/annotate_www/releases/download/1.0.2/annotate-1.0.2-x64.dmg',
             '_blank'
           )
           setLoading(false)
           return
         } else if (os === 'macosM1') {
           window.open(
-            'https://github.com/achuthhadnoor/lapse_www/releases/download/1.0.2/Lapse-1.0.2-arm64.dmg',
+            'https://github.com/achuthhadnoor/annotate_www/releases/download/1.0.2/annotate-1.0.2-arm64.dmg',
             '_blank'
           )
           setLoading(false)
           return
         }
         window.open(
-          'https://github.com/achuthhadnoor/www/releases/download/0.0.1/Lapse.Setup.0.0.10.exe'
+          'https://github.com/achuthhadnoor/www/releases/download/0.0.1/annotate.Setup.0.0.10.exe'
         )
         setLoading(false)
       })
@@ -53,12 +53,12 @@ const Appsumo = (props: any) => {
   }
   return (
     <Container
-      title={'Lapse | Appsumo '}
-      description="Download lapse for macOs"
+      title={'annotate | Appsumo '}
+      description="Download annotate for macOs"
     >
       <section className=" mx-auto mt-24 max-w-4xl">
         <h1 className="flex justify-center align-middle text-3xl">
-          Lapse ❤️{' '}
+          annotate ❤️{' '}
           <svg
             width="150"
             height="24"
@@ -107,7 +107,7 @@ const Appsumo = (props: any) => {
           <h2 className="text-lg font-semibold">Hello Sumo-links 👋</h2>
           <p className="my-5 max-w-xl leading-loose">
             Please enter your name, email and Appsumo code below to download
-            lapse and enjoy creating amazing time-lapse videos
+            annotate and enjoy creating amazing time-annotate videos
             <span className="mx-1 rounded bg-purple-800 p-1 text-purple-200">
               {' '}
               with life time access
@@ -130,7 +130,7 @@ const Appsumo = (props: any) => {
         </div>
         <div className="mx-auto my-5 rounded-md bg-neutral-900 px-4 py-5 shadow-md">
           <h3 className="mt-2 text-lg">
-            Start recoding your amazing digital work in time-lapse
+            Start recoding your amazing digital work in time-annotate
           </h3>
           <form
             className="flex max-w-md flex-col gap-4 py-4"

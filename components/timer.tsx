@@ -54,9 +54,9 @@ export default function Timer({ type }: { type: string }) {
           <button className="mt-2 w-full rounded-lg bg-purple-500 px-4 py-2 text-xs ring-purple-900 hover:ring-2 sm:text-sm">
             Get It for{' '}
             <span className="stroke-purple-600 text-purple-300 line-through">
-              $25
+              $15
             </span>{' '}
-            <span className="ring-1 ring-gray-900">$15</span>
+            <span className="ring-1 ring-gray-900">$9</span>
           </button>
         </a>
       </div>
@@ -86,9 +86,9 @@ export default function Timer({ type }: { type: string }) {
               <button className="m-2 rounded-lg bg-purple-800 px-4 py-2 text-xs outline-none ring-purple-900 hover:bg-purple-600 hover:ring-2 sm:text-sm">
                 Get It for
                 <span className="stroke-purple-300 px-1 font-bold text-purple-300 line-through">
-                  $25
+                  $15
                 </span>
-                <span className="text-purple-100">$15</span>
+                <span className="text-purple-100">$9</span>
               </button>
             </a>
           </div>
