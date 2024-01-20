@@ -5,7 +5,7 @@ export default function Timer({ type }: { type: string }) {
   const [timer, setTimer] = useState({ days: 0, hr: 0, min: 0, sec: 0 })
   const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
-    const countDownDate = new Date('December 31, 2023 15:37:25').getTime()
+    const countDownDate = new Date('March 31, 2024 15:37:25').getTime()
     // Update the count down every 1 second
     var x = setInterval(function () {
       // Get today's date and time

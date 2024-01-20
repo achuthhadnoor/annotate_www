@@ -144,8 +144,8 @@ const Menubar = () => {
                       d="M6.7334 12.8251L11.0751 4.91484C12.5287 2.35586 17.5681 4.18643 15.0304 11.6527L14.3759 11.902L11.2334 10.2866"
                       stroke="white"
                       stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                   <path
@@ -219,7 +219,6 @@ const Menubar = () => {
                   width="15.1626"
                   height="16.85"
                   filterUnits="userSpaceOnUse"
-                  
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
@@ -286,7 +285,6 @@ const Menubar = () => {
                   width="18.02"
                   height="15.4954"
                   filterUnits="userSpaceOnUse"
-                  
                 >
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
                   <feColorMatrix

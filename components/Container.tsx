@@ -527,7 +527,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-between py-5 text-xs">
         <span>
-          Copyright © {_date.getFullYear()} <i className="font-mono">Lapse</i>
+          Copyright © {_date.getFullYear()} <i className="font-mono">Annotate</i>
         </span>
         <span>
           <a href="https://twitter.com/achuth_hadnoor">
