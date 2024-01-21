@@ -133,14 +133,14 @@ function Header() {
       >
         <span className="px-2 py-1 text-sm">FAQ</span>
       </Link>
-      <a
+      {/* <a
         href="https://achuth.notion.site/Changelog-4c898f8b4ec140abb1d6a6d2e9108a15"
         target="_blank"
         rel="noopener noreferrer"
         className="text-sm"
       >
         Changelog
-      </a>
+      </a> */}
     </nav>
   )
   return (
@@ -192,11 +192,8 @@ function Header() {
             </svg>
 
           </span>
-          <div className="hidden lg:flex">
-            <NavMenu />
-          </div>
           <div className="flex gap-4">
-            <Link href="/download">
+            <Link href="#download">
               <button className="rounded bg-gradient-to-r from-purple-700/40 p-[0.5px]">
                 <div className="flex items-center gap-2 rounded  bg-black/20 p-2">
                   <span className="hidden md:inline-block">Download</span>
@@ -274,75 +271,9 @@ function Header() {
                 </div>
               </button>
             </Link>
-
-            <button
-              className="lg:hidden"
-              onClick={() => {
-                setOpen(true)
-              }}
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 8H21"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M3 15H21"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
           </div>
         </div>
       </header>
-      {open && (
-        <div className="fixed left-0 top-0 z-50 h-screen w-screen bg-neutral-900/30 p-4 backdrop-blur-md">
-          <div className="flex flex-col items-end gap-4 rounded-lg">
-            <button
-              onClick={() => {
-                setOpen(false)
-              }}
-              className="rounded-full border-2  border-transparent p-2 outline-none focus:border-neutral-50"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18 6L6 18"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M6 6L18 18"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-            <NavMenu />
-          </div>
-        </div>
-      )}
     </>
   )
 }
@@ -365,16 +296,10 @@ const Footer = () => {
   const _date = new Date()
   return (
     <footer className="mx-auto max-w-6xl px-4 sm:px-20">
-      <div className="flex flex-col justify-between gap-4 px-2 py-10 lg:flex-row">
-        <div className="grid flex-1 grid-flow-row gap-2 text-gray-400  md:grid-flow-col md:grid-rows-3">
-          <Link href="#feedback">Feedback</Link>
-          {/* <ExternalLink href="https://gum.co/lapse_app">Buy</ExternalLink> */}
-          <ExternalLink href="https://achuth.notion.site/Changelog-4c898f8b4ec140abb1d6a6d2e9108a15">
-            Changelog
-          </ExternalLink>
-          <ExternalLink href="https://achuth.notion.site/Press-Kit-1a3b994e395d43efbaf6727fed4429f1">
-            Press kit
-          </ExternalLink>
+      <div className="flex justify-between gap-4 px-2 py-10 lg:flex-row">
+        <div
+          className='flex gap-5 justify-center w-full'
+        >
           <ExternalLink href="https://achuth.notion.site/Privacy-Policy-ec65b78f07c443e2a3bcd46d834a263d">
             Privacy policy
           </ExternalLink>
@@ -385,89 +310,7 @@ const Footer = () => {
             Refund Policy
           </ExternalLink>
         </div>
-        <div className="mt-10 max-w-lg rounded-lg bg-purple-900/30 px-2 py-4 sm:mt-0  sm:px-10">
-          <h3 className="mb-5 text-2xl">Be the first to know</h3>
-          <p className="mb-5 text-sm text-gray-300">
-            We’ll inform you about new tips, apps and deals. No spam, we
-            promise.
-          </p>
-          <form
-            className="flex flex-col rounded-lg bg-black/50 p-2 sm:flex-row"
-            onSubmit={async (e) => {
-              e.preventDefault()
-              let { status, error }: any = await fetch('/api/subscribe', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                  email: email,
-                }),
-              })
-              switch (status) {
-                case 201:
-                  setSuccessMessage('You are subscribed')
-                  break
-                case 400:
-                  setSuccessMessage(error)
-                  break
-              }
-              setEmail('')
-            }}
-          >
-            <input
-              name="email"
-              type="email"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value)
-              }}
-              placeholder="join@email.addess"
-              className="flex-1 bg-transparent px-4 py-2  outline-none"
-              required
-            />
-            <button
-              type="submit"
-              className="mt-5 w-full rounded-md bg-purple-800 px-4 py-2 sm:mt-0 sm:w-fit "
-            >
-              Subscribe
-            </button>
-          </form>
-          {successMessage && (
-            <div className="fixed right-0 top-10 flex items-center rounded bg-lime-100 px-2 text-purple-600 ">
-              {successMessage}
-              <span
-                className="p-2"
-                onClick={() => {
-                  setSuccessMessage('')
-                }}
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18 6L6 18"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M6 6L18 18"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </div>
-          )}
-        </div>
+
       </div>
       <div className="flex justify-between py-5 text-xs">
         <span>

@@ -28,22 +28,22 @@ const Download = (props: any) => {
         console.log(res.data)
         if (os === 'macos') {
           window.open(
-            'https://github.com/achuthhadnoor/lapse_www/releases/download/1.0.2/Lapse-1.0.2-x64.dmg',
+            'https://github.com/achuthhadnoor/annotate_www/releases/download/1.0.1/annotate-1.0.1-x64.dmg',
             '_blank'
           )
           setLoading(false)
           return
         } else if (os === 'macosM1') {
           window.open(
-            'https://github.com/achuthhadnoor/lapse_www/releases/download/1.0.2/Lapse-1.0.2-arm64.dmg',
+            'https://github.com/achuthhadnoor/annotate_www/releases/download/1.0.1/annotate-1.0.1-arm64.dmg',
             '_blank'
           )
           setLoading(false)
           return
         }
-        window.open(
-          'https://github.com/achuthhadnoor/www/releases/download/1.0.1/Lapse.Setup.1.0.10.exe'
-        )
+        // window.open(
+        //   'https://github.com/achuthhadnoor/annotate_www/releases/download/1.0.1/annotate.Setup.1.0.10.exe'
+        // )
         setLoading(false)
       })
     }
@@ -53,18 +53,18 @@ const Download = (props: any) => {
   }
   return (
     <Container
-      title={'Lapse | Download '}
-      description="Download lapse for macOs"
+      title={'annotate | Download '}
+      description="Download annotate for macOs"
     >
       <section className=" mx-auto mt-24 max-w-4xl p-4 md:p-0">
         <h1 className="flex justify-center align-middle text-3xl">
-          Download Lapse
+          Download annotate
         </h1>
         <div className="mx-auto my-5 mt-2">
           <h2 className="text-lg font-semibold">👋 Hello</h2>
           <p className="my-5 max-w-xl leading-loose">
             Please enter your name, email and license code below to download
-            lapse and enjoy creating amazing time-lapse videos .
+            annotate and enjoy creating amazing time-annotate videos .
           </p>
           <p className="my-5 max-w-xl leading-loose">
             After submission, you will recieve the
@@ -82,7 +82,7 @@ const Download = (props: any) => {
         </div>
         <div className="mx-auto my-5 rounded-md bg-neutral-900 px-4 py-5 shadow-md">
           <h3 className="mt-2 text-lg">
-            Start recoding your amazing digital work in time-lapse
+            Start recoding your amazing digital work in time-annotate
           </h3>
           <form
             className="flex max-w-md flex-col gap-4 py-4"
@@ -116,19 +116,7 @@ const Download = (props: any) => {
             <p className="text-xs text-neutral-400">Paste the code</p>
             <div className="flex flex-col">
               <span className="my-5 text-sm">Select operating system</span>
-              {/* <label htmlFor="windows">
-                <input
-                  id="windows"
-                  name="windows"
-                  type="radio"
-                  className="mx-2"
-                  checked={os === 'windows' ? true : false}
-                  onClick={() => {
-                    selectOs('windows')
-                  }}
-                />
-                Windows
-              </label> */}
+
               <label htmlFor="macos">
                 <input
                   id="macos"
