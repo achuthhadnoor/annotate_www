@@ -49,8 +49,10 @@ const NewRoute = () => {
             </div>
             <div>
               <div className="flex gap-2 justify-center md:justify-start">
-                <button className="rounded-md bg-neutral-200 px-4 py-2 text-indigo-950">Purchase license</button>
-                <button className="rounded-md bg-indigo-500 px-4 py-2">Download Trail</button>
+                <Link href={'https://gum.co/annotate'}>
+                  <button className="rounded-md bg-neutral-200 px-4 py-2 text-indigo-950">Purchase license</button>
+                </Link>
+                {/* <button className="rounded-md bg-indigo-500 px-4 py-2">Download Trail</button> */}
               </div>
               <span className="text-xs text-neutral-500">macOS 10.15+ Intel, Apple Silicon and Windows</span>
             </div>
@@ -185,8 +187,10 @@ const NewRoute = () => {
         <p>Pay once and use forever</p>
         <div className='space-y-4'>
           <div className="flex gap-2 justify-center md:justify-start">
-            <button className="rounded-md bg-neutral-200 px-4 py-2 text-indigo-950">Purchase license</button>
-            <button className="rounded-md bg-indigo-500 px-4 py-2">Download Trail</button>
+            <Link href={'https://gum.co/annotate'}>
+              <button className="rounded-md bg-neutral-200 px-4 py-2 text-indigo-950">Purchase license</button>
+            </Link>
+            {/* <button className="rounded-md bg-indigo-500 px-4 py-2">Download Trail</button> */}
           </div>
           <span className="text-xs text-neutral-500">macOS 10.15+ Intel, Apple Silicon and Windows</span>
           <div> 5.0 ⭐⭐⭐⭐⭐ Based on User Feedback</div>

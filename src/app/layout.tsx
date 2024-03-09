@@ -61,7 +61,7 @@ export default function RootLayout({
             <div className="flex items-center gap-4 md:p-2 px-4 py-2 bg-neutral-900/80 rounded-full md:bg-transparent text-xs md:text-md">
               <a href="https://achuth.notion.site/Changelog-cf1aea338e454e1888b362d00c5be39f?pvs=4" className="p-2">Changelog</a>
               <Link href="/pricing" className="p-2">Pricing</Link>
-              <button className="hidden md:inline-block rounded bg-indigo-900 px-4 py-2">Download Now</button>
+              <Link href="https://github.com/achuthhadnoor/annotate_www/releases/latest"><button className="hidden md:inline-block rounded bg-indigo-900 px-4 py-2">Download Now</button></Link>
             </div>
           </header>
           {children}
