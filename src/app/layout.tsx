@@ -51,13 +51,13 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className="flex-col mx-auto max-w-5xl px-2 gap-24 mb-24 md:mb-0">
           <header className="mb-8 flex flex-col md:flex-row items-center justify-between py-4 gap-8 md:gap-2 ">
-            <span>
+            <Link href={'/'}>
               <Image
                 src="/favicon-180.png"
                 alt="leaf-left"
                 height={50}
                 width={50}
-              /> </span>
+              /> </Link>
             <div className="flex items-center gap-4 md:p-2 px-4 py-2 bg-neutral-900/80 rounded-full md:bg-transparent text-xs md:text-md">
               <a href="https://achuth.notion.site/Changelog-cf1aea338e454e1888b362d00c5be39f?pvs=4" className="p-2">Changelog</a>
               <Link href="/pricing" className="p-2">Pricing</Link>

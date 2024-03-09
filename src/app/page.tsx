@@ -126,7 +126,7 @@ const NewRoute = () => {
                 />
               </span>
               <span className="text-center md:text-left">
-                + hundteals of happy users!
+                + hundreds of happy users!
               </span>
             </div>
           </div>
