@@ -3,16 +3,7 @@ import React from 'react'
 
 const NewRoute = () => {
   return (
-    <main className="flex-col mx-auto max-w-5xl px-2 gap-24">
-      <header className="mb-8 flex flex-col md:flex-row items-center justify-between py-4 gap-8 md:gap-2 ">
-        <span> Annotate </span>
-        <div className="flex items-center gap-4 md:p-2 px-4 py-2 bg-neutral-900/80 rounded-full md:bg-transparent text-xs md:text-md">
-          <a href="#" className="p-2">Feedback</a>
-          <a href="#" className="p-2">Changelog</a>
-          <a href="#" className="p-2">Pricing</a>
-          <button className="hidden md:inline-block rounded bg-indigo-900 px-4 py-2">Download Now</button>
-        </div>
-      </header>
+    <>
       <section className="flex flex-col gap-24">
         <div className="flex flex-col items-center md:flex-row text-center md:text-left gap-24 md:gap-2">
           <div className="flex flex-col gap-4">
@@ -196,11 +187,11 @@ const NewRoute = () => {
             </div>
             <div className="mb-6 p-0">
               <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                "So far, I've been using different software for my timelapse
+                {` "So far, I've been using different software for my timelapse
                 recordings, but I've always had to do a framerate conversion
                 afterwards. I just wanted to give a shoutout to Achuth for being
                 incredibly helpful in the embedded chat on his website. He
-                responded super quickly. Best wishes! "
+                responded super quickly. Best wishes! "`}
               </p>
             </div>
           </div>
@@ -230,9 +221,9 @@ const NewRoute = () => {
             </div>
             <div className="mb-6 p-0">
               <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                "I found solution to all my design needs from Creative Tim. I
+                {`"I found solution to all my design needs from Creative Tim. I
                 use them as a freelancer in my hobby projects for fun! And its
-                really affordable, very humble guys !!!"
+                really affordable, very humble guys !!!"`}
               </p>
             </div>
           </div>
@@ -339,10 +330,10 @@ const NewRoute = () => {
             </div>
             <div className="mb-6 p-0">
               <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                I love Lapse, It's a pretty cool piece of software. It works as
+                {`I love Lapse, It's a pretty cool piece of software. It works as
                 advertised and the quality of footage is great. My only request
                 would be to add a GIF convertor and dual screen recording
-                (currently you can record on the active screen).
+                (currently you can record on the active screen).`}
               </p>
             </div>
           </div>
@@ -359,7 +350,7 @@ const NewRoute = () => {
           <div>⭐⭐⭐⭐⭐ 5.0 Based on User Review</div>
         </div>
       </section>
-    </main>
+    </>
   )
 }
 export default NewRoute;
