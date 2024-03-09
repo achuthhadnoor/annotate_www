@@ -3,23 +3,23 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)",
+        source: '/(.*)',
         headers: [
           {
-            key: "Cross-Origin-Embedder-Policy",
-            value: "require-corp youtube",
+            key: 'Cross-Origin-Embedder-Policy',
+            value: 'require-corp youtube producthunt',
           },
           {
-            key: "Cross-Origin-Opener-Policy",
-            value: "same-origin",
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin',
           },
         ],
       },
-    ];
+    ]
   },
   reactStrictMode: true,
   experimental: {
     sharedArrayBuffer: true,
   },
-};
-export default nextConfig;
+}
+export default nextConfig
