@@ -4,6 +4,7 @@ import "./globals.css";
 import Crisp from "@/components/crisp";
 import Image from "next/image";
 import Link from "next/link";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -248,6 +249,7 @@ export default function RootLayout({
           <a href="https://www.producthunt.com/posts/annotate-6?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-annotate&#0045;6" target="_blank" className="fixed right-24 bottom-5"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=435552&theme=neutral" alt="Annotate - Menubar&#0032;app&#0032;to&#0032;draw&#0032;on&#0032;any&#0032;app&#0032;or&#0032;screen&#0032;on&#0032;macOS | Product Hunt" width="250" height="54" /></a>
 
         </main>
+        <GoogleAnalytics gaId="G-0B65SJT7HC" />
       </body>
     </html >
   );
