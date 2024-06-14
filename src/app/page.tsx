@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import cl from 'classnames'
+import { motion } from 'framer-motion';
 
 const NewRoute = () => {
   const [activeFQA, setActiveFQA] = useState(0);
@@ -40,14 +41,37 @@ const NewRoute = () => {
   return (
     <>
       <section className="flex flex-col gap-24">
-        <div className="flex flex-col items-center md:flex-row text-center md:text-left gap-24 md:gap-2">
+        <motion.div className="flex flex-col items-center md:flex-row text-center md:text-left gap-24 md:gap-2">
           <div className="flex flex-col gap-4">
-            <h1 className="max-w-sm text-4xl font-bold"><span className='inline-block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent'>Annotate</span> any <span className='inline-block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent'>Screen</span> or <span className='inline-block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent'>App</span> while screen Recording✨</h1>
-            <div className="text-neutral-300">
+            <motion.h1
+              initial={{ opacity: 0, scale: 0.98, translateY: 15, skew: 1 }}
+              animate={{
+                scale: 1,
+                opacity: 1, skew: 0,
+                translateY: 0
+              }}
+              transition={{ duration: 0.4 }}
+              className="max-w-sm text-4xl font-bold"><span className='inline-block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent'>Annotate</span> any <span className='inline-block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent'>Screen</span> or <span className='inline-block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent'>App</span> while screen Recording✨</motion.h1>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.98, translateY: 15, skew: 1 }}
+              animate={{
+                scale: 1,
+                opacity: 1, skew: 0,
+                translateY: 0
+              }}
+              transition={{ duration: 0.4, delay: 0.1, opacity: 1, skew: 0 }}
+              className="text-neutral-300">
               <p>Present Screen like a pro</p>
               <span>Click → Draw → Clear</span>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.98, translateY: 15, skew: 1 }}
+              animate={{
+                scale: 1,
+                opacity: 1, skew: 0,
+                translateY: 0
+              }}
+              transition={{ duration: 0.4, delay: 0.2 }}>
               <div className="flex gap-2 justify-center md:justify-start">
                 <Link href={'https://gum.co/annotate'}>
                   <button className="rounded-md bg-neutral-200 px-4 py-2 text-indigo-950">Purchase license</button>
@@ -55,9 +79,16 @@ const NewRoute = () => {
                 {/* <button className="rounded-md bg-indigo-500 px-4 py-2">Download Trail</button> */}
               </div>
               <span className="text-xs text-neutral-500">macOS 10.15+ Intel, Apple Silicon and Windows</span>
-            </div>
+            </motion.div>
           </div>
-          <div className="w-full mx-auto max-w-2xl">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.98, translateY: 15, skew: 1 }}
+            animate={{
+              scale: 1,
+              opacity: 1, skew: 0,
+              translateY: 0
+            }}
+            transition={{ duration: 0.4, delay: 0.1, opacity: 1, skew: 0 }} className="w-full mx-auto max-w-2xl">
             <div className="my-3 aspect-video md:my-0 flex-grow-2 order-2 md:order-1">
               <iframe
                 width="100%"
@@ -68,9 +99,17 @@ const NewRoute = () => {
                 className="mx-auto rounded-2xl"
               ></iframe>
             </div>
-          </div>
-        </div>
-        <div className="flex gap-2 text-center justify-center">
+          </motion.div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.98, translateY: 15, skew: 1 }}
+          animate={{
+            scale: 1,
+            opacity: 1, skew: 0,
+            translateY: 0
+          }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="flex gap-2 text-center justify-center">
           <Image
             src="/leaf_left.png"
             alt="leaf-left"
@@ -139,7 +178,7 @@ const NewRoute = () => {
             width={100}
             className='opacity-45'
           />
-        </div>
+        </motion.div>
       </section>
       <section className='flex flex-col-reverse md:flex-row my-24 items-center gap-4'>
         <video autoPlay loop controls playsInline className='flex-1 max-w-xl ring-2 rounded-md ring-teal-700 w-full'>
