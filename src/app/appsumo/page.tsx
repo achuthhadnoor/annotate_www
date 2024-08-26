@@ -61,21 +61,21 @@ export default function Home({ searchParams }: any) {
                 console.log(res.data)
                 if (os === 'macos') {
                     window.open(
-                        `https://github.com/achuthhadnoor/lapse_www/releases/download/${version}/Lapse-${version}-x64.dmg`,
+                        `https://github.com/achuthhadnoor/annoatate_www/releases/download/${version}/annoatate-${version}-x64.dmg`,
                         '_blank'
                     )
                     setLoading(false)
                     return
                 } else if (os === 'macosM1') {
                     window.open(
-                        `https://github.com/achuthhadnoor/lapse_www/releases/download/${version}/Lapse-${version}-arm64.dmg`,
+                        `https://github.com/achuthhadnoor/annoatate_www/releases/download/${version}/annoatate-${version}-arm64.dmg`,
                         '_blank'
                     )
                     setLoading(false)
                     return
                 }
                 window.open(
-                    'https://github.com/achuthhadnoor/lapse_www/releases/download/1.0.4/Lapse.Setup.1.0.3.exe'
+                    'https://github.com/achuthhadnoor/annoatate_www/releases/download/1.0.4/annoatate.Setup.1.0.3.exe'
                 )
                 setLoading(false)
             })
@@ -199,21 +199,8 @@ export default function Home({ searchParams }: any) {
                         <p className="text-xs text-indigo-600/70">
                             Paste the code from appsumo
                         </p>
-                        {/* <div className="flex flex-col">
+                        <div className="flex flex-col">
                             <span className="my-5 text-sm">Select operating system</span>
-                            <label htmlFor="windows">
-                                <input
-                                    id="windows"
-                                    name="windows"
-                                    type="radio"
-                                    className="mx-2"
-                                    checked={os === 'windows' ? true : false}
-                                    onChange={() => {
-                                        selectOs('windows')
-                                    }}
-                                />
-                                Windows
-                            </label>
                             <label htmlFor="macos">
                                 <input
                                     id="macos"
@@ -254,7 +241,7 @@ export default function Home({ searchParams }: any) {
                                     ))}
                                 </select>
                             </label>
-                        </div> */}
+                        </div>
                         <span>
                             <button
                                 type="submit"
