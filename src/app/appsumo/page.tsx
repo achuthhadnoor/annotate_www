@@ -61,21 +61,21 @@ export default function Home({ searchParams }: any) {
                 console.log(res.data)
                 if (os === 'macos') {
                     window.open(
-                        `https://github.com/achuthhadnoor/annotate_www/releases/download/${version}/annoatate-${version}-x64.dmg`,
+                        `https://github.com/achuthhadnoor/annotate_www/releases/download/${version}/Annotate-${version}-x64.dmg`,
                         '_blank'
                     )
                     setLoading(false)
                     return
                 } else if (os === 'macosM1') {
                     window.open(
-                        `https://github.com/achuthhadnoor/annotate_www/releases/download/${version}/annoatate-${version}-arm64.dmg`,
+                        `https://github.com/achuthhadnoor/annotate_www/releases/download/${version}/Annotate-${version}-arm64.dmg`,
                         '_blank'
                     )
                     setLoading(false)
                     return
                 }
                 window.open(
-                    'https://github.com/achuthhadnoor/annotate_www/releases/download/1.0.4/annoatate.Setup.1.0.3.exe'
+                    'https://github.com/achuthhadnoor/annotate_www/releases/download/1.0.4/Annotate.Setup.1.0.3.exe'
                 )
                 setLoading(false)
             })
