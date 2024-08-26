@@ -299,7 +299,7 @@ const NewRoute = () => {
                   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pb-8 pt-0  shadow-none">
                     <Image
                       className="rounded-md"
-                      src={"/avatars/default.png"}
+                      src={"https://ph-avatars.imgix.net/5403718/959ed060-fae5-49bf-990e-b03b598a69f2.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=120&h=120&fit=crop&dpr=2"}
                       alt={"Medias"}
                       width={75}
                       height={75}
@@ -309,23 +309,21 @@ const NewRoute = () => {
                     <div className="flex w-full flex-col gap-0.5">
                       <div className="flex items-center justify-between">
                         <h5 className="text-blue-gray-900 block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
-                          Medias
+                        Alvaro Villalba Perez
                         </h5>
                         <div className="5 flex items-center gap-0">⭐⭐⭐⭐⭐
                         </div>
                       </div>
                       <p className="text-blue-gray-900 block font-sans text-base font-light leading-relaxed antialiased">
-                        Great timesaver!
+                      Co-founder at Clous
                       </p>
                     </div>
                   </div>
                   <div className="mb-6 p-0">
-                    <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                      {` "So far, I've been using different software for my timelapse
-                recordings, but I've always had to do a framerate conversion
-                afterwards. I just wanted to give a shoutout to Achuth for being
-                incredibly helpful in the embedded chat on his website. He
-                responded super quickly. Best wishes! "`}
+                    <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased flex">
+                      {` "We really need this app. I'd use it with clients, employees, etc. 
+                      Having an annotation tool fully embedded in the MacOS UI is just great. 
+                      Congrats to the team. Best launch today! "`}
                     </p>
                   </div>
                 </div>
@@ -333,7 +331,7 @@ const NewRoute = () => {
                   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pb-8 pt-0  shadow-none">
                     <Image
                       className="rounded-full"
-                      src={"/avatars/mikkel.jpg"}
+                      src={"https://ph-avatars.imgix.net/282542/92c275a6-1d2e-45e0-8d14-9a76a64c5dca.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=120&h=120&fit=crop"}
                       alt={"Mikkel"}
                       width={75}
                       height={75}
@@ -343,21 +341,21 @@ const NewRoute = () => {
                     <div className="flex w-full flex-col gap-0.5">
                       <div className="flex items-center justify-between">
                         <h5 className="text-blue-gray-900 block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
-                          Mikkel
+                        Musharof Chowdhury
                         </h5>
                         <div className="5 flex items-center gap-0">⭐⭐⭐⭐⭐
                         </div>
                       </div>
                       <p className="text-blue-gray-900 block font-sans text-base font-light leading-relaxed antialiased">
-                        Appsumo user
+                      Founder @Pimjo
                       </p>
                     </div>
                   </div>
                   <div className="mb-6 p-0">
                     <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                      {`"I found solution to all my design needs from Creative Tim. I
-                use them as a freelancer in my hobby projects for fun! And its
-                really affordable, very humble guys !!!"`}
+                      {`"Awesome app! I can understand how much effort you put into making it live.
+                      I would like to suggest that you move this into a separate domain and make the pricing more clear.
+                      Goodluck!"`}
                     </p>
                   </div>
                 </div>
@@ -365,7 +363,37 @@ const NewRoute = () => {
                   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pb-8 pt-0  shadow-none">
                     <Image
                       className="rounded-full"
-                      src={"/avatars/saasMaster.png"}
+                      src={"https://ph-avatars.imgix.net/1996202/605143d4-9c09-4cc0-8fb2-dcdbcf9cc632.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=120&h=120&fit=crop"}
+                      alt={"Screen recording"}
+                       width={75}
+                      height={75}
+                      blurDataURL="data:..."
+                      placeholder="blur" // Optional blur-up while loading
+                    />
+                    <div className="flex w-full flex-col gap-0.5">
+                      <div className="flex items-center justify-between">
+                        <h5 className="text-blue-gray-900 block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
+                        Garen Orchyan
+                        </h5>
+                        <div className="5 flex items-center gap-0">⭐⭐⭐⭐⭐
+                        </div>
+                      </div>
+                      <p className="text-blue-gray-900 block font-sans text-base font-light leading-relaxed antialiased">
+                        ProductHunt User
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mb-6 p-0">
+                    <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                      {`"Looks super. Big congrats on the launch, best of luck today 🦄🎉"`}
+                    </p>
+                  </div>           
+                </div>
+                <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl  bg-clip-border  p-4 shadow-none bg-neutral-800/80">
+                  <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pb-8 pt-0  shadow-none">
+                    <Image
+                      className="rounded-full"
+                      src={"https://ph-avatars.imgix.net/6641216/original.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=120&h=120&fit=crop"}
                       alt={"Screen recording"}
                       width={75}
                       height={75}
@@ -375,33 +403,19 @@ const NewRoute = () => {
                     <div className="flex w-full flex-col gap-0.5">
                       <div className="flex items-center justify-between">
                         <h5 className="text-blue-gray-900 block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
-                          SaasMaster
+                        dvss karthick
                         </h5>
                         <div className="5 flex items-center gap-0">⭐⭐⭐⭐⭐
                         </div>
                       </div>
                       <p className="text-blue-gray-900 block font-sans text-base font-light leading-relaxed antialiased">
-                        Exactly as advertised
+                      ProductHunt User
                       </p>
                     </div>
                   </div>
                   <div className="mb-6 p-0">
-                    <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                      {`Lapse can record your screen in high speed mode. Not really a work tool but more of a cool gadget. You can record your workflow or your day work and display it in a quick video.
-
-                PROS:
-                Works just like advertised
-                Records up to 8K
-                Available for Windows and Mac
-                Unlimited recordings
-                Frame rate selection
-
-                CONS:
-                No regular recording
-                Not direct install from App Store (mac) permission is required to install
-
-                Video example here: https://youtu.be/EJJOjh8pZFM
-`}
+                    <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased justify-between">
+                      {`Good luck on the Launch!!Looks like a great companion for recording interactive videos!`}
                     </p>
                   </div>
                 </div>
@@ -409,7 +423,7 @@ const NewRoute = () => {
                   <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pb-8 pt-0  shadow-none">
                     <Image
                       className="rounded-full"
-                      src={"/avatars/epitomi.png"}
+                      src={"https://ph-avatars.imgix.net/4218825/47fe3260-9d32-405a-9a89-784f84a3d7b8.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=120&h=120&fit=crop"}
                       alt={"epitomi"}
                       width={75}
                       height={75}
@@ -419,58 +433,25 @@ const NewRoute = () => {
                     <div className="flex w-full flex-col gap-0.5">
                       <div className="flex items-center justify-between">
                         <h5 className="text-blue-gray-900 block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
-                          Epitomi
+                        Abhishek Dutta
                         </h5>
                         <div className="5 flex items-center gap-0">⭐⭐⭐⭐⭐
                         </div>
                       </div>
                       <p className="text-blue-gray-900 block font-sans text-base font-light leading-relaxed antialiased">
-                        Good but needs more basic features
+                      UX designer and founder @ Team Codesign
                       </p>
                     </div>
                   </div>
                   <div className="mb-6 p-0">
                     <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                      {` Pros [+] It exports easily [+] It does what it supposed to do
-                Cons [-] No custom region yet [-] No focus on specific app yet
-                [-] No basic effects editor (i.e. put a rectangle or an arrow)
-                [-] No web dashboard app for knowing we own it besides receipt`}
+                      {`Hey @achuthhadnoor, so this looks like another amazing product coming from your repository. You have been an amazing maker and have been indie-hacking a lot of amazing stuff and putting it across for all of the Product Hunt community.
+                      Excited to see you here again with this amazing product and I think — and I completely believe — that this will be a fit for a lot of meeting hoggers like me. I'm looking forward to trying this one out.
+                      Thank you for such an amazing product once again. This looks, this looks amazing, exciting, thanks for you, for sure.`}
                     </p>
                   </div>
                 </div>
-                <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl  bg-clip-border  p-4 shadow-none bg-neutral-800/80">
-                  <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pb-8 pt-0  shadow-none">
-                    <Image
-                      className="rounded-full"
-                      src={"/avatars/default.png"}
-                      alt={"Screen recording"}
-                      width={75}
-                      height={75}
-                      blurDataURL="data:..."
-                      placeholder="blur" // Optional blur-up while loading
-                    />
-                    <div className="flex w-full flex-col gap-0.5">
-                      <div className="flex items-center justify-between">
-                        <h5 className="text-blue-gray-900 block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
-                          Xeferus
-                        </h5>
-                        <div className="5 flex items-center gap-0">⭐⭐⭐⭐⭐
-                        </div>
-                      </div>
-                      <p className="text-blue-gray-900 block font-sans text-base font-light leading-relaxed antialiased">
-                        Works great!
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mb-6 p-0">
-                    <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                      {`I love Lapse, It's a pretty cool piece of software. It works as
-                advertised and the quality of footage is great. My only request
-                would be to add a GIF convertor and dual screen recording
-                (currently you can record on the active screen).`}
-                    </p>
-                  </div>
-                </div>
+
               </div>
             </motion.section>)}
         </AnimatePresence>
