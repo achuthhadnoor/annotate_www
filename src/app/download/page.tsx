@@ -11,11 +11,11 @@ export default function Home() {
         },
         {
             title: "Is there a Windows app?",
-            des: "Yes we support for MacOs and windows.",
+            des: "No, currently we are only on Mac",
         },
         {
             title: "Do you offer a trial?",
-            des: "We didn’t implement a trial yet, but no worries—feel free to purchase the app. If you’re not happy send a short message. We’ll refund your order.",
+            des: "We didn’t implement a trial yet, but no worries — Feel free to purchase the app. If you’re not happy send a short message. We’ll refund your order.",
         },
         {
             title: "Something’s wrong. How do I get in touch?",
@@ -23,14 +23,14 @@ export default function Home() {
         },
         {
             title: "The menubar app doesn’t work. What can I do?",
-            des: "Lapse requires the screen Record permission in “System Preferences › Security & Privacy › Privacy › Screen Recording. For macOS 10.15 (Catalina) the screen recording permission in “System Preferences › Security & Privacy › Privacy › Screen Recording” is required too.",
+            des: "Annotate requires the screen Record permission in “System Preferences › Security & Privacy › Privacy › Screen Recording. For macOS 10.15 (Catalina) the screen recording permission in “System Preferences › Security & Privacy › Privacy › Screen Recording” is required too.",
         },
         {
-            title: "How much memory does Lapse use?",
-            des: "Lapse uses ~150MB ",
+            title: "How much memory does Annotate use?",
+            des: "Annotate uses ~150MB ",
         },
         {
-            title: "Will you update Lapse?",
+            title: "Will you update Annotate?",
             des: "One year of updates with the licence purchaced.",
         },
     ];

@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: ['ph-avatars.imgix.net'], // Add your domain(s) here
+  },
   async headers() {
     return [
       {

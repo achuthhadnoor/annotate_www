@@ -14,34 +14,34 @@ export default function Home({ searchParams }: any) {
     const [version, setVersion] = useState(currentVersion)
     const faqs = [
         {
-            title: 'Is there an option to select monitors?',
-            des: 'Yes you can select one of the external monitors to start recording. However, the support for single app recording is in the roadmap.',
+            title: "Is there an option to select monitors?",
+            des: "Yes you can select one of the external monitors to start recording. However, the support for single app recording is in the roadmap.",
         },
         {
-            title: 'Is there a Windows app?',
-            des: 'Yes we support for MacOs and windows.',
+            title: "Is there a Windows app?",
+            des: "No, currently we are only on Mac",
         },
         {
-            title: 'Do you offer a trial?',
-            des: 'We didn’t implement a trial yet, but no worries—feel free to purchase the app. If you’re not happy send a short message. We’ll refund your order.',
+            title: "Do you offer a trial?",
+            des: "We didn’t implement a trial yet, but no worries — Feel free to purchase the app. If you’re not happy send a short message. We’ll refund your order.",
         },
         {
-            title: 'Something’s wrong. How do I get in touch?',
-            des: 'Drop us a line, we’ll be happy to help!',
+            title: "Something’s wrong. How do I get in touch?",
+            des: "Drop us a line, we’ll be happy to help!",
         },
         {
-            title: 'The menubar app doesn’t work. What can I do?',
-            des: 'Lapse requires the screen Record permission in “System Preferences › Security & Privacy › Privacy › Screen Recording. For macOS 10.15 (Catalina) the screen recording permission in “System Preferences › Security & Privacy › Privacy › Screen Recording” is required too.',
+            title: "The menubar app doesn’t work. What can I do?",
+            des: "Annotate requires the screen Record permission in “System Preferences › Security & Privacy › Privacy › Screen Recording. For macOS 10.15 (Catalina) the screen recording permission in “System Preferences › Security & Privacy › Privacy › Screen Recording” is required too.",
         },
         {
-            title: 'How much memory does Lapse use?',
-            des: 'Lapse uses ~150MB ',
+            title: "How much memory does Annotate use?",
+            des: "Annotate uses ~150MB ",
         },
         {
-            title: 'Will you update Lapse?',
-            des: 'One year of updates with the licence purchaced.',
+            title: "Will you update Annotate?",
+            des: "One year of updates with the licence purchaced.",
         },
-    ]
+    ];
     useEffect(() => {
         setCode(searchParams.appsumocode)
     }, [])
